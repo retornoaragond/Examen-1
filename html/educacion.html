@@ -2,9 +2,92 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Curriculum Vitae Digital</title>
   </head>
   <body>
-
+    <header>
+      <img src="..\media\img\Logo.svg" name="Logo curriculum vitae"
+      alt="Logo curriculum vitae" width="200" height="120">
+      <h1>Curriculum Vitae</h1>
+    </header>
+    <h2>Esteban Espinoza Fallas</h1>
+    <h3>Fecha y lugar de nacimiento: <br> 25/11/1995 Heredia,Costa Rica</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i></i>Inicio</a></li>
+        <li><a href="educacion.html">Educacion</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+    </nav>
+    <h2>Educaci&oacute;n</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>T&iacute;tulo</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2013</td>
+            <td>Liceo Lic.Mario Vindas Salazar</td>
+            <td>Bachillerato en Educacion Media</td>
+            <td>San Pablo, Heredia</td>
+            <td>si</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Universidad Nacional de Costa Rica</td>
+            <td>Diplomado en programaci&oacute;n de aplicaciones Inform&aacute;ticas</td>
+            <td>Lagunilla, Heredia</td>
+            <td>si</td>
+          </tr>
+        </tbody>
+    </table>
+    <h3>Agregar Estudios</h3>
+    <form >
+      <label for="Anio"><strong>A&ntilde;o</strong>:
+        <select  name="Anio" >
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+        </select>
+      </label>
+      <br>
+      <br>
+      <label for="institucion"><strong>Instituci&oacute;n: </strong>
+        <input type="text" name="institucion" required></label>
+      <br>
+      <br>
+      <label for="titulo"><strong>T&iacute;tulo: </strong>
+        <input type="text" name="titulo" required></label>
+      <br>
+      <br>
+      <label for="Lugar"><strong>Lugar: </strong>
+        <textarea name="lugar" rows="2" cols="22"></textarea></label>
+      <br>
+      <br>
+      <label for="Culmino"><strong>¿Culmin&oacute;?</strong>
+      <input type="radio" name="culmino">Si
+      <input type="radio" name="culmino">No</label>
+      <br>
+      <br>
+      <input type="submit" name="Enviar" value="Enviar">
+    </form>
   </body>
+  <footer>
+    <p>E-mail: <a href="mailto:eef251195@gmail.com">eef251195@gmail.com</a> </p>
+    <p>Numero Telefonico: (+506) 8411-9542.</p>
+    <p>Direccion: San Pablo,Heredia, Costa Rica.</p>
+  </footer>
 </html>
